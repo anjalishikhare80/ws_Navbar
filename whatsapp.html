@@ -1,0 +1,200 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Navbar</title>
+
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 16px;
+            background-color: white;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: normal;
+            margin-bottom: 8px;
+        }
+
+        
+        .navbar {
+            width: 100%;
+            min-height: 41px;
+            background-color: #111b21;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 5px 12px;
+        }
+
+  
+        .group-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            min-width: 0;
+            flex: 1;
+        }
+
+        .group-icon {
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background-color: #3b1822;
+            color: #ff3158;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 12px;
+        }
+
+        .group-details {
+            min-width: 0;
+            overflow: hidden;
+        }
+
+        .group-details h3 {
+            font-size: 9px;
+            margin-bottom: 3px;
+            font-weight: bold;
+        }
+
+        .group-details p {
+            font-size: 8px;
+            color: #aebac1;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+        .navbar-actions {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin-left: 10px;
+            flex-shrink: 0;
+        }
+
+        .navbar-actions button {
+            background: transparent;
+            color: #e9edef;
+            border: none;
+            cursor: pointer;
+            font-size: 11px;
+            padding: 5px;
+        }
+
+        .navbar-actions .add-list {
+            border: 1px solid #374045;
+            border-radius: 20px;
+            padding: 6px 10px;
+            font-size: 9px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .navbar-actions .call-button {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .navbar-actions button:hover {
+            background-color: #27343a;
+            border-radius: 15px;
+        }
+
+
+        @media (max-width: 550px) {
+            .group-details p {
+                max-width: 180px;
+            }
+
+            .navbar-actions {
+                gap: 2px;
+            }
+
+            .navbar-actions .add-list {
+                font-size: 0;
+                padding: 7px;
+            }
+
+            .navbar-actions .add-list i {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Wats App Navbar</h2>
+
+    <nav class="navbar">
+
+
+        <div class="group-info">
+
+            <div class="group-icon">
+                <i class="fa-solid fa-user-group"></i>
+            </div>
+
+            <div class="group-details">
+                <h3>B101-WS-MERN-JFP</h3>
+
+                <p>
+                    B101, B101Komal, B87, Swapneel, WS, WS,
+                    +91 755 869 3115, +91 87998 78829,
+                    +91 84592 37342, +91 80559 10164,
+                    +91 93093 4891, and others
+                </p>
+            </div>
+
+        </div>
+
+
+        <div class="navbar-actions">
+
+            <button class="add-list">
+                <i class="fa-regular fa-rectangle-list"></i>
+                Add to list
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <button class="call-button" aria-label="Video call">
+                <i class="fa-solid fa-video"></i>
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <button aria-label="Search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+            <button aria-label="More options">
+                <i class="fa-solid fa-ellipsis-vertical"></i>
+            </button>
+
+        </div>
+
+    </nav>
+
+</body>
+</html>
