@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Navbar</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+       
+        .navbar {
+            width: 100%;
+            min-height: 65px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+            padding: 8px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        
+        .left-section {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo {
+            background-color: #0a66c2;
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            padding: 0 4px;
+            border-radius: 3px;
+        }
+
+        .search-box {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: #edf3f8;
+            border-radius: 5px;
+            padding: 10px;
+            width: 200px;
+        }
+
+        .search-box input {
+            border: none;
+            outline: none;
+            background: transparent;
+            width: 100%;
+            font-size: 12px;
+        }
+
+        
+        .nav-items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 22px;
+        }
+
+        .nav-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 5px;
+            color: #666;
+            font-size: 11px;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        .nav-item i {
+            font-size: 18px;
+        }
+
+        .nav-item:hover {
+            color: black;
+        }
+
+        .active {
+            color: black;
+            border-bottom: 2px solid black;
+            padding-bottom: 8px;
+        }
+
+       
+        .profile {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background-color: #e1c4a8;
+            color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+        }
+
+        .business {
+            border-left: 1px solid #ddd;
+            padding-left: 15px;
+        }
+
+        .premium {
+            color: #8f6b20;
+        }
+
+     
+        @media (max-width: 900px) {
+            .navbar {
+                justify-content: flex-start;
+                overflow-x: auto;
+                gap: 18px;
+            }
+
+            .nav-items {
+                gap: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+
+       
+        <div class="left-section">
+
+            <div class="logo">in</div>
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+
+        </div>
+
+        
+        <div class="nav-items">
+
+            <a href="#" class="nav-item active">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-user-group"></i>
+                <span>My Network</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-briefcase"></i>
+                <span>Jobs</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-comment-dots"></i>
+                <span>Messaging</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <i class="fa-solid fa-bell"></i>
+                <span>Notifications</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <div class="profile">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <span>Me <i class="fa-solid fa-caret-down"></i></span>
+            </a>
+
+            <a href="#" class="nav-item business">
+                <i class="fa-solid fa-grip"></i>
+                <span>For Business</span>
+            </a>
+
+            <a href="#" class="nav-item premium">
+                <i class="fa-solid fa-square"></i>
+                <span>Try Premium for ₹0</span>
+            </a>
+
+        </div>
+
+    </nav>
+
+</body>
+</html>
