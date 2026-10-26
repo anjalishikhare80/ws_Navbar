@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instagram Footer</title>
+
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fafafa;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+  
+        .content {
+            flex: 1;
+        }
+
+        .footer {
+            width: 100%;
+            padding: 30px 20px;
+            background-color: #fafafa;
+            text-align: center;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            margin-bottom: 18px;
+        }
+
+        .footer-links a {
+            text-decoration: none;
+            color: #737373;
+            font-size: 12px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+            color: #737373;
+            font-size: 12px;
+        }
+
+        .language {
+            border: none;
+            background-color: transparent;
+            color: #737373;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .language i {
+            margin-left: 5px;
+        }
+
+        .copyright i {
+            margin-right: 4px;
+        }
+
+        @media (max-width: 600px) {
+            .footer {
+                padding: 25px 12px;
+            }
+
+            .footer-links {
+                gap: 12px;
+            }
+
+            .footer-links a {
+                font-size: 11px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <main class="content"></main>
+
+
+    <footer class="footer">
+
+        <div class="footer-links">
+            <a href="#">Meta</a>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Jobs</a>
+            <a href="#">Help</a>
+            <a href="#">API</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+            <a href="#">Locations</a>
+            <a href="#">Instagram Lite</a>
+            <a href="#">Threads</a>
+            <a href="#">Contact Uploading & Non-Users</a>
+            <a href="#">Meta Verified</a>
+        </div>
+
+        <div class="footer-bottom">
+
+            <button class="language">
+                English
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <span class="copyright">
+                <i class="fa-regular fa-copyright"></i>
+                2026 Instagram from Meta
+            </span>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
